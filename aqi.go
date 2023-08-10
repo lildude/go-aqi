@@ -38,6 +38,7 @@ const (
 // metadata.
 type Index struct {
 	Name  string
+	Key   string
 	Color color.RGBA
 	Low   int
 	High  int
@@ -47,42 +48,49 @@ type Index struct {
 var (
 	Good = Index{
 		Name:  "Good",
+		Key:   "Good",
 		Color: color.RGBA{0, 228, 0, 255},
 		Low:   goodBreakpointLow,
 		High:  goodBreakpointHigh,
 	}
 	Moderate = Index{
 		Name:  "Moderate",
+		Key:   "Moderate",
 		Color: color.RGBA{255, 255, 0, 255},
 		Low:   moderateBreakpointLow,
 		High:  moderateBreakpointHigh,
 	}
 	Sensitive = Index{
 		Name:  "Unhealthy for Sensitive Groups",
+		Key:   "Sensitive",
 		Color: color.RGBA{255, 126, 0, 255},
 		Low:   sensitiveBreakpointLow,
 		High:  sensitiveBreakpointHigh,
 	}
 	Unhealthy = Index{
 		Name:  "Unhealthy",
+		Key:   "Unhealthy",
 		Color: color.RGBA{255, 0, 0, 255},
 		Low:   unhealthyBreakpointLow,
 		High:  unhealthyBreakpointHigh,
 	}
 	VeryUnhealthy = Index{
 		Name:  "Very Unhealthy",
+		Key:   "VeryUnhealthy",
 		Color: color.RGBA{153, 0, 76, 255},
 		Low:   veryUnhealthyBreakpointLow,
 		High:  veryUnhealthyBreakpointHigh,
 	}
 	Hazardous = Index{
 		Name:  "Hazardous",
+		Key:   "Hazardous",
 		Color: color.RGBA{125, 0, 35, 255},
 		Low:   hazardousBreakpointLow,
 		High:  hazardousBreakpointHigh,
 	}
 	VeryHazardous = Index{
 		Name:  "Very Hazardous",
+		Key:   "VeryHazardous",
 		Color: color.RGBA{128, 64, 10, 255},
 		Low:   veryHazardousBreakpointLow,
 		High:  veryHazardousBreakpointHigh,
