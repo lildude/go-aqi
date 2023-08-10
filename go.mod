@@ -1,4 +1,4 @@
-module github.com/mrflynn/go-aqi
+module github.com/lildude/go-aqi
 
 go 1.15
 

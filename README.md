@@ -20,7 +20,7 @@ ozone is slightly more complicated compared to the other particulate measures.
 ## Installation
 
 ```
-go get -u github.com/mrflynn/go-aqi
+go get -u github.com/lildude/go-aqi
 ```
 
 ## Documentation
@@ -36,7 +36,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/mrflynn/go-aqi"
+	"github.com/lildude/go-aqi"
 )
 
 func main() {

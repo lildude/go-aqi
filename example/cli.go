@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mrflynn/go-aqi"
+	"github.com/lildude/go-aqi"
 )
 
 // This is an example cli utility that converts PM2.5 measurements to the corresponding
