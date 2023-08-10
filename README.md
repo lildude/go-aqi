@@ -1,7 +1,7 @@
 # go-aqi ![tests](https://github.com/MrFlynn/go-aqi/workflows/Tests/badge.svg) [![godev](https://img.shields.io/badge/godev-reference-00add8)](https://pkg.go.dev/github.com/mrflynn/go-aqi)
 Calculate the air quality index (AQI) from different particulate concentrations.
 The method for calculating AQI is based on the Environmental Protection Agency's
-(United States) [table method](https://en.wikipedia.org/wiki/Air_quality_index#United_States) 
+(United States) [table method](https://en.wikipedia.org/wiki/Air_quality_index#United_States)
 for calculating AQI. Other countries' AQI calculation methods might come in the
 future, but this might require some rethinking of how this library is currently
 written.
@@ -40,7 +40,7 @@ import (
 )
 
 func main() {
-	results, err := aqi.Calculate(aqi.PM25{20.2}, aqi.CO{4.1}, aqi.NO2{67.6})
+	results, err := aqi.Calculate(aqi.PM25{Concentration: 20.2}, aqi.CO{Concentration: 4.1}, aqi.NO2{Concentration: 67.6})
 	if err != nil {
 		fmt.Println(err)
 		return

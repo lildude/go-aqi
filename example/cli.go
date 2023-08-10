@@ -34,7 +34,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	result, err := aqi.Calculate(aqi.PM25{pm25})
+	result, err := aqi.Calculate(aqi.PM25{Concentration: pm25})
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
