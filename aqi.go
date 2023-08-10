@@ -82,8 +82,8 @@ var (
 		High:  hazardousBreakpointHigh,
 	}
 	VeryHazardous = Index{
-		Name:  "Hazardous",
-		Color: color.RGBA{125, 0, 35, 255},
+		Name:  "Very Hazardous",
+		Color: color.RGBA{128, 64, 10, 255},
 		Low:   veryHazardousBreakpointLow,
 		High:  veryHazardousBreakpointHigh,
 	}
